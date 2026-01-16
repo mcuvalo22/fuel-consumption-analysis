@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import FileUpload from './components/FileUpload';
 import pipe from './utils/pipe.js';
+import StatsCards from './components/StatsCards.jsx'; 
 import { parseCSV, addConsumptionData } from './parsers/csvParser';
 import {
   groupByVehicle,
@@ -78,7 +79,7 @@ function App() {
           </div>
         )}
 
-                {error && (
+        {error && (
           <div style={{
             marginTop: '20px',
             padding: '15px',
@@ -92,17 +93,12 @@ function App() {
         )}
 
         {results && (
-          <div style={{
-            marginTop: '30px',
-            padding: '20px',
-            background: '#2c2c2c',
-            color: '#fff',
-            borderRadius: '10px'
-          }}>
-            <h3>Analiza uspješna!</h3>
-            <p>Analizirano vozila: {results.fleetStats.total_vehicles}</p>
-            <p>Prosječna potrošnja: {results.fleetStats.avg_fleet_consumption} L/100km</p>
-            <p>Ukupan trošak: €{results.fleetStats.total_cost_eur.toLocaleString()}</p>
+          <div style={{ marginTop: '30px' }}>
+            <h2 style={{ color: '#fff', marginBottom: '20px' }}>
+              Rezultati analize
+            </h2>
+            
+            <StatsCards fleetStats={results.fleetStats} />
           </div>
         )}
 
