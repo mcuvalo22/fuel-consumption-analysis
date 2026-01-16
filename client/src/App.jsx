@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import FileUpload from './components/FileUpload';
 import pipe from './utils/pipe.js';
-import StatsCards from './components/StatsCards.jsx'; 
+import StatsCards from './components/StatsCards.jsx';
+import VehicleTable from './components/VehicleTable.jsx'; 
 import { parseCSV, addConsumptionData } from './parsers/csvParser';
 import {
   groupByVehicle,
@@ -10,7 +11,7 @@ import {
   sortByConsumption,
   filterHighConsumption,
   calculateFleetStats
-} from './analysis/fuelAnalysis';
+} from './analysis/fuelAnalysis.js';
 
 function App() {
 
@@ -99,6 +100,16 @@ function App() {
             </h2>
             
             <StatsCards fleetStats={results.fleetStats} />
+
+            <VehicleTable 
+              vehicles={results.vehicleStats} 
+              title="Statistika vozila po potrošnji" 
+            />
+
+            <VehicleTable 
+              vehicles={results.highConsumers} 
+              title="Vozila s visokom potrošnjom (>9 L/100km)" 
+            />
           </div>
         )}
 

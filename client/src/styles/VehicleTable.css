@@ -1,0 +1,109 @@
+.vehicle-table-container {
+  margin: 40px 0;
+  text-align: left;
+}
+
+.vehicle-table-container h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+/* Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  background: #202020;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Table */
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #202020;
+  color: #e0e0e0;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Header */
+.vehicle-table thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.vehicle-table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Rows */
+.vehicle-table tbody tr {
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.vehicle-table tbody tr:hover {
+  background: #2c2c2c;
+}
+
+/* Cells */
+.vehicle-table td {
+  padding: 14px;
+}
+
+/* Vehicle ID */
+.vehicle-id {
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* Consumption */
+.consumption-cell {
+  text-align: center;
+}
+
+.consumption-badge {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85em;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Badge variants */
+.consumption-badge.excellent {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4caf50;
+}
+
+.consumption-badge.good {
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+}
+
+.consumption-badge.average {
+  background: rgba(255, 152, 0, 0.15);
+  color: #ff9800;
+}
+
+.consumption-badge.high {
+  background: rgba(244, 67, 54, 0.15);
+  color: #f44336;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vehicle-table {
+    font-size: 0.9em;
+  }
+
+  .vehicle-table th,
+  .vehicle-table td {
+    padding: 10px;
+  }
+}
