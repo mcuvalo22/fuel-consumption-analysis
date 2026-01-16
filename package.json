@@ -1,0 +1,13 @@
+{
+  "name": "fuel-consumption-analysis",
+  "version": "1.0.0",
+  "description": "Analiza potrošnje goriva voznog parka koristeći funkcijsko programiranje",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["functional-programming", "map", "reduce", "pipe", "fuel-analysis"],
+  "author": "Tvoje Ime",
+  "license": "MIT"
+}
