@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(19, 18, 18);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app {
+  background: rgb(26, 26, 26);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 20px;
+  padding-left: 30px;    
+  border-color: rgb(108, 116, 116);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  min-height: 500px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
