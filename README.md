@@ -1,11 +1,10 @@
 # Fuel Consumption Analysis Project
 
-Fleet fuel consumption analysis using custom implementations of `map`, `reduce`, and `pipe` functions.
+Project for the **Declarative Programming** course – Faculty of Electrical Engineering and Computing, University of Zagreb.
 
-## Project Description
+## About the project
 
-Fuel Consumption Analysis is a Node.js project developed as part of the **Declarative Programming** course (*Deklarativno programiranje*) at the **Faculty of Organization and Informatics (FOI)**, **University of Zagreb**.  
-The project was created in an academic context to demonstrate an understanding of declarative programming principles, with a strong emphasis on functional programming concepts such as immutability, pure functions, and function composition.
+This project demonstrates the practical application of **functional programming** through custom implementations of higher-order functions (`map`, `reduce`, `pipe`) and their use in analyzing fleet fuel consumption data.
 
 ## Features
 
@@ -27,30 +26,48 @@ The `reduce` function performs data aggregation by iteratively combining element
 ### `pipe`
 The `pipe` function enables function composition by connecting multiple functions into a linear processing pipeline. The output of one function becomes the input of the next, resulting in clear, readable, and modular data-processing flows rooted in mathematical function composition.
 
-## Instalation
+## Installation and Usage
+
+### CLI Version (Node.js)
 ```bash
-npm install
-```
+1. Clone the repository
+git clone https://github.com/YOUR-USERNAME/fuel-consumption-analysis.git
+cd fuel-consumption-analysis
 
-## Data format
+2. Add data
+Place the CSV file in data/fuel_data.csv
 
-1. Add CSV data to data/fuel_data.csv
-2. Data format:
-```bash
-   vehicle_id,date,distance_km,fuel_used_liters,fuel_price_per_liter
-```
-
-## Running the app
-
-```bash
+3. Run the analysis
 npm start
+```
+### Web Version (React)
+```bash
+cd client
+npm install
+npm run dev
 ```
 
 ## Technologies
 
-- Node.js
-- Functional Programming
+### Backend (Core)
+- **Node.js** (ES6 Modules)
+- **Vanilla JavaScript** – no external libraries for core functionality
+
+### Frontend (Web Interface)
+- **React 18**
+- **Vite** – build tool
+- **Chart.js** – data visualization
 
 ## Author
 
 Mateo Čuvalo
+Student, Faculty of organization and informatics Varaždin
+University of Zagreb
+
+## License
+
+This project is licensed under the GPL License – see the LICENSE file for details.
+
+## References
+
+Detailed references and academic sources will be provided in the project documentation (LaTeX).
