@@ -4,7 +4,7 @@ function parseCSV(csvString) {
   const lines = csvString.trim().split('\n');
   
   if (lines.length < 2) {
-    throw new Error('CSV mora imati zaglavlje i barem jedan red podataka');
+    throw new Error('CSV mora imati zaglavlje i bar jedan red podataka');
   }
 
   const headers = lines[0].split(',').map(h => h.trim());
@@ -34,7 +34,7 @@ function parseCSV(csvString) {
 function addConsumptionData(records) {
   return map(records, (record) => {
     if (record.distance_km <= 0) {
-      throw new Error(`Nevaljana udaljenost za vozilo ${record.vehicle_id}`);
+      throw new Error(`Nevaljana udaljenost ${record.vehicle_id}`);
     }
 
     const consumption = (record.fuel_used_liters / record.distance_km) * 100;

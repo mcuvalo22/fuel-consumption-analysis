@@ -8,7 +8,7 @@ function pipe(...functions) {
   }
 
   return function(initialValue) {
-    return functions.reduce((value, fn) => {
+    return reduce(functions, (value, fn) => {
       return fn(value);
     }, initialValue);
   };
