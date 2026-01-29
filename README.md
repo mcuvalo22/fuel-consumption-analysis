@@ -31,7 +31,7 @@ The `pipe` function enables function composition by connecting multiple function
 ### CLI Version (Node.js)
 ```bash
 1. Clone the repository
-git clone https://github.com/YOUR-USERNAME/fuel-consumption-analysis.git
+git clone https://github.com/mcuvalo22/fuel-consumption-analysis.git
 cd fuel-consumption-analysis
 
 2. Add data
